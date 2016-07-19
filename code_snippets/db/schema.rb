@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20160624065830) do
     t.text     "work"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "kind_id"
+    t.integer  "kind_id" 
   end
 
   add_index "snippets", ["kind_id"], name: "index_snippets_on_kind_id", using: :btree
